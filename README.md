@@ -1,4 +1,4 @@
-## react-simple-tabs
+## react-minimal-tabs
 
 A simple and easy to use tabs component for react with animated active tab marker.
 
