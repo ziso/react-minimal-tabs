@@ -19,6 +19,7 @@ export default class Tabs extends React.Component {
       activeTabIndex: this.props.activeTabIndex || this.props.defaultActiveTabIndex,
     };
     this.handleTabClick = this.handleTabClick.bind(this);
+    this.updateMarker = this.updateMarker.bind(this);
   }
 
   handleTabClick(tabIndex, node) {
@@ -58,15 +59,23 @@ export default class Tabs extends React.Component {
     props.activeTabIndex && this.setState({ activeTabIndex: props.activeTabIndex });
   }
 
-  componentDidUpdate() {
-    if (this.refs.marker && this.refs.activeTab) {
-      const selectedTabClientRect = this.refs.activeTab.getBoundingClientRect();
-      this.refs.marker.style.bottom = '1px';
-      this.refs.marker.style.width = selectedTabClientRect.width + 'px';
-      this.refs.marker.style.left =
-        selectedTabClientRect.left - this.refs.tabHeader.getBoundingClientRect().left + 'px';
-    }
-  }
+	componentDidUpdate() {
+		this.updateMarker();
+	}
+
+	componentDidMount() {
+		this.updateMarker();
+	}
+
+	updateMarker() {
+		if (this.refs.marker && this.refs.activeTab) {
+			const selectedTabClientRect = this.refs.activeTab.getBoundingClientRect();
+			this.refs.marker.style.bottom = '1px';
+			this.refs.marker.style.width = selectedTabClientRect.width + 'px';
+			this.refs.marker.style.left =
+				selectedTabClientRect.left - this.refs.tabHeader.getBoundingClientRect().left + 'px';
+		}
+	}
 
   render() {
     return (
