@@ -1,5 +1,5 @@
 {
-  "name": "react-simple-tabs",
+  "name": "react-minimal-tabs",
   "version": "0.0.1",
   "description": "A simple Tabs component with sliding active tab marker",
   "main": "build/index.js",
