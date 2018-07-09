@@ -6,6 +6,10 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 });
 module.exports = {
 	entry: path.join(__dirname, "examples/src/index.js"),
+	output: {
+		path: path.join(__dirname, "examples/build"),
+		filename: "bundle.js"
+	},
 	module: {
 		rules: [
 			{
