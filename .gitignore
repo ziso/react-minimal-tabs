@@ -21,3 +21,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea
+examples/build/bundle.js
+examples/build/index.html
