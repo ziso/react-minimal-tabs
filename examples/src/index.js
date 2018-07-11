@@ -7,13 +7,19 @@ import Tab from '../../src/components/Tab';
 const App = () => (
 	<div className="App">
 		<Tabs defaultActiveTabIndex={0}>
-			<Tab tabTitle="1">
-				<div className="tab-1">1</div>
-			</Tab>
-			<Tab tabTitle="2">
-				<div className="tab-2">2</div>
-			</Tab>
-		</Tabs>
+      <Tab tabTitle="title-1">
+        <div className="tab-1">1</div>
+      </Tab>
+      <Tab tabTitle="title-2">
+        <div className="tab-2">2</div>
+      </Tab>
+      <Tab tabTitle="title-3">
+        <div className="tab-3">3</div>
+      </Tab>
+      <Tab tabTitle="title-4">
+        <div className="tab-4">4</div>
+      </Tab>
+    </Tabs>
 	</div>
 );
 render(<App />, document.getElementById("root"));
