@@ -9,7 +9,7 @@ demo: https://ziso.github.io/react-minimal-tabs/
 ### Install
  
 ```javascript
-$ npm install react-bootstrap-treeview
+$ npm install react-minimal-tabs
 ```
 
 ### Usage
@@ -17,11 +17,17 @@ $ npm install react-bootstrap-treeview
 ```javascript
 React.render(
     <Tabs defaultActiveTabIndex={0}>
-      <Tab tabTitle="1">
+      <Tab tabTitle="title-1">
         <div className="tab-1">1</div>
       </Tab>
-      <Tab tabTitle="2">
+      <Tab tabTitle="title-2">
         <div className="tab-2">2</div>
+      </Tab>
+      <Tab tabTitle="title-3">
+        <div className="tab-3">3</div>
+      </Tab>
+      <Tab tabTitle="title-4">
+        <div className="tab-4">4</div>
       </Tab>
     </Tabs>
 );
