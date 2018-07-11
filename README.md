@@ -16,7 +16,7 @@ $ npm install react-bootstrap-treeview
 
 ```javascript
 React.render(
-    <Tabs defaultActiveTabIndex={1}>
+    <Tabs defaultActiveTabIndex={0}>
       <Tab tabTitle="1">
         <div className="tab-1">1</div>
       </Tab>
