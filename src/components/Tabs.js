@@ -1,13 +1,13 @@
 //based on https://medium.com/@diegocasmo/a-simple-react-tabs-component-47cac2cfbb5
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 import './Tabs.css';
 export default class Tabs extends React.Component {
-  // static propTypes = {
-  //   defaultActiveTabIndex: PropTypes.number,
-  //   activeTabIndex: PropTypes.number,
-  //   onActiveTabChange: PropTypes.func,
-  // };
+  static propTypes = {
+    defaultActiveTabIndex: PropTypes.number,
+    activeTabIndex: PropTypes.number,
+    onActiveTabChange: PropTypes.func,
+  };
 
   static defaultProps = {
     defaultActiveTabIndex: 0,
